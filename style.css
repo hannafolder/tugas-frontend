@@ -1,0 +1,160 @@
+/* ===== WARNA (tropical fresh) ===== */
+:root {
+  --sand: #FBF3E4;
+  --ocean: #0E7C7B;
+  --ocean-deep: #0A4F52;
+  --coral: #FF6F5E;
+  --leaf: #4F9A63;
+  --ink: #163634;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--sand);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--ocean-deep);
+}
+
+a {
+  color: var(--ocean);
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--ocean-deep);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+/* Efek hover pada menu */
+nav a:hover {
+  text-decoration: underline;
+  color: var(--coral);
+}
+
+/* ===== LAYOUT GRID =====
+   Kolom konten (3fr) dan sidebar (1fr) */
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.foto-utama {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ===== KARTU DESTINASI ===== */
+.grid-kartu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.kartu {
+  background-color: white;
+  border: 1px solid var(--ocean);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.kartu img,
+.foto-kosong {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.foto-kosong {
+  background-color: var(--sand);
+  border: 1px dashed var(--ocean);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ocean);
+  font-size: 14px;
+}
+
+/* ===== GALERI ===== */
+.grid-galeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-galeri img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background-color: var(--ocean);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--ocean-deep);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .grid-kartu {
+    grid-template-columns: 1fr;
+  }
+  .grid-galeri {
+    grid-template-columns: 1fr;
+  }
+}
