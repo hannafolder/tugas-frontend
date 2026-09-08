@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7fa;
+    color: #5f4650;
+}
+
+/* HEADER */
+
+header {
+    background-color: #f6a6c1;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.nim {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.decoration {
+    position: absolute;
+    left: 20%;
+    top: 25px;
+    font-size: 30px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-bottom: 1px solid #f3d5df;
+}
+
+nav a {
+    color: #9d4b68;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e45c89;
+}
+
+/* MAIN */
+
+main {
+    min-height: 550px;
+    padding: 60px 20px;
+}
+
+/* ARTICLE */
+
+.hero,
+.card,
+.contact-card {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 25px;
+    border: 1px solid #f8dce5;
+    box-shadow: 0 8px 25px rgba(190, 100, 130, 0.12);
+}
+
+.hero {
+    text-align: center;
+}
+
+.small-title {
+    color: #e45c89;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h2,
+.card h2,
+.contact-card h2 {
+    color: #c94f78;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.hero p,
+.card p,
+.contact-card p {
+    line-height: 1.8;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 27px;
+    background-color: #e9799d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #c94f78;
+}
+
+/* ABOUT ME */
+
+.card h2 {
+    text-align: center;
+}
+
+.info-box {
+    margin-top: 30px;
+}
+
+.info-box div {
+    background-color: #fff0f5;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+}
+
+.info-box span {
+    display: block;
+    color: #c96b89;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.info-box strong {
+    color: #704653;
+}
+
+/* MY INTEREST */
+
+.interest-card {
+    background-color: #fff5f8;
+    border: 1px solid #f5d6e1;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.interest-card:hover {
+    box-shadow: 0 8px 20px rgba(190, 100, 130, 0.15);
+}
+
+.interest-icon {
+    color: #e45c89;
+    font-size: 27px;
+}
+
+.interest-card h3 {
+    color: #c94f78;
+}
+
+.interest-card p {
+    font-size: 14px;
+}
+
+/* CONTACT */
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-decoration {
+    color: #e45c89;
+    font-size: 35px;
+}
+
+.email {
+    color: #9d4b68;
+    margin-top: 10px;
+}
+
+.linkedin {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #f1dce3;
+}
+
+.linkedin a {
+    color: #d45580;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f3a1bc;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
